@@ -1,0 +1,25 @@
+<!--logs.wxml-->
+<view class="empty-view" wx:if="{{!logs}}">
+  <image src="../../../images/no_data_icon.png"></image>
+  <text>您还没有提现记录</text>
+</view>
+
+<view class="list-view bt1 bg0" wx:if="{{logs}}">
+  <view class="list-item bb1" wx:for="{{logs}}" wx:key="*this" bindtap="listenerItemClick" data-img="{{item.voucher}}">
+    <view class="f28 b item-center" style="margin-top:14rpx">
+      <text>{{item.date}}</text>
+      <view class="item-content-center">
+        <text>{{item.payModeDesc}}</text>
+        <text style="margin-right:30rpx;" class="f36">{{item.amount}}元</text>
+      </view>
+      <image style="margin-right:30rpx;" class="arrow" src="../../../images/black_more_bt.png"></image>
+    </view>
+
+    <text class="f28" wx:if="{{item.remark}}" style="color:#888888;">备注：{{item.remark}}</text>
+
+  </view>
+  <view class="weui-loadmore" hidden="{{isHideLoadMore}}">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore-tips">正在加载</view>
+  </view>
+</view>

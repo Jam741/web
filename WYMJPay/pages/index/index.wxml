@@ -1,0 +1,66 @@
+<!--index.wxml-->
+<!-- <view class="container-vertical"> -->
+<view class="top-layout">
+  <view class="userinfo" wx:if="{{loginStatus}}" style="background-image: url('http://osz2pnx97.bkt.clouddn.com/xiaochengxu_user_bj.png');">
+
+    <image class="userinfo-avatar" src="{{bankBaseInfo.headImage}}"></image>
+    <text class="userinfo-nickname">{{bankBaseInfo.nickName}}</text>
+  </view>
+
+  <view class="user-login" wx:if="{{!loginStatus}}" style="background-image: url('http://osz2pnx97.bkt.clouddn.com/xiaochengxu_user_bj.png');">
+    <text class="f36">注册账号，开通快捷收款</text>
+    <view class="btn-area">
+      <button bindtap="listenerLoginClick">登录 / 注册</button>
+    </view>
+  </view>
+</view>
+
+<view class="bank-area" wx:if="{{bankBaseInfo.bindCard}}">
+  <view class="btn-tab">
+    <view class="bank-info">
+      <text class="bank-info-title">收款银行卡</text>
+      <view class="bank-info-content">
+        <text style="margin-right:60rpx;">{{bankBaseInfo.getMoneyCard.bankName}}</text> <text>{{bankBaseInfo.getMoneyCard.tr_cardNO}}</text>
+      </view>
+    </view>
+    <image src="{{bankBaseInfo.getMoneyCard.logo}}"></image>
+  </view>
+</view>
+
+
+<view class="event bg0">
+  <view class="divider"></view>
+  <view class="btn-tab" bindtap="quickCollection" wx:if="{{!bankBaseInfo || (bankBaseInfo&&bankBaseInfo.showGet)}}">
+    <image src="../../images/kjsk_icon.png"></image>
+    <view> 快捷收款</view>
+    <image class="arrow" src="../../images/more_bt.png"></image>
+  </view>
+  <view class="divider-padding-left" wx:if="{{!bankBaseInfo || (bankBaseInfo&&bankBaseInfo.showGet)}}"></view>
+  <view class="btn-tab" bindtap="checkCollectionNote">
+    <image src="../../images/ckjyjl_icon.png"></image>
+    <view> 查看交易记录</view>
+    <image class="arrow" src="../../images/more_bt.png"></image>
+  </view>
+  <view class="divider-padding-left"></view>
+  <view class="btn-tab" bindtap="functionDescription">
+    <image src="../../images/gnsm_icon.png"></image>
+    <view> 功能说明</view>
+    <image class="arrow" src="../../images/more_bt.png"></image>
+  </view>
+  <view class="divider"></view>
+</view>
+
+<view class="event bg0 bt1 bb1 mt14" wx:if="{{bankBaseInfo.showSpread || bankBaseInfo.showDevelop}}">
+  <view class="btn-tab" bindtap="listenerGeneralizeClick" wx:if="{{bankBaseInfo.showSpread}}">
+    <image src="../../images/tgkjsk_icon.png"></image>
+    <view> 推广快捷收款</view>
+    <image class="arrow" src="../../images/more_bt.png"></image>
+  </view>
+  <view class="divider-padding-left" wx:if="{{bankBaseInfo.showSpread && bankBaseInfo.showDevelop}}"></view>
+  <view class="btn-tab" bindtap="listenerDevelopClick" wx:if="{{bankBaseInfo.showDevelop}}">
+    <image src="../../images/fzqds_icon.png"></image>
+    <view> 发展渠道商</view>
+    <image class="arrow" src="../../images/more_bt.png"></image>
+  </view>
+</view>
+<!-- </view> -->

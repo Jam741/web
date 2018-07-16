@@ -1,0 +1,30 @@
+<!--logs.wxml-->
+<view class="empty-view" wx:if="{{!logs}}">
+  <image src="../../images/no_data_icon.png"></image>
+  <text>您还没有交易记录</text>
+</view>
+
+<view class="list-view bt1 bg0" wx:if="{{logs}}">
+
+
+  <view class="list-item bb1" wx:for="{{logs}}" wx:key="*this" bindtap="listenerItemClick" data-index="{{index}}">
+    <view class="item-left">
+      <image src="{{item.bankLogo}}"></image>
+      <view class="item-left-view">
+        <text class="f36 b">{{item.amount}}元</text>
+        <text style="margin-top:8rpx;text-algin:center;" class="f28 b">{{item.bankName+item.cardType}}（{{item.cardNO}}）</text>
+      </view>
+    </view>
+    <view class="item-right">
+      <view class="item-right-view f26" style="color:#888888;">
+        <text>{{item.date}}</text>
+        <text style="margin-top:8rpx">{{item.time}}</text>
+      </view>
+      <image style="margin-left:30rpx;" class="arrow" src="../../images/black_more_bt.png"></image>
+    </view>
+  </view>
+  <view class="weui-loadmore" hidden="{{isHideLoadMore}}">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore-tips">正在加载</view>
+  </view>
+</view>

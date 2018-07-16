@@ -1,0 +1,12 @@
+<!--remark.wxml-->
+<view style="margin-top:30rpx;" class="bg0">
+
+  <textarea class="remark-input" maxlength="30" type="text" placeholder="请输入备注" bindinput="listenerRemarkInput" value="{{remark}}" />
+
+  <!-- <textarea class="remark-input" maxlength="30" wx:if="{{!remark}}" type="text" placeholder="请输入备注 - NO" bindinput="listenerRemarkInput" /> -->
+
+</view>
+
+<view class="btn-area">
+  <button bindtap="listenerConfirmClick">完成</button>
+</view>

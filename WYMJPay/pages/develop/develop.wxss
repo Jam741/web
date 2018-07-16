@@ -1,0 +1,137 @@
+/* develop.wxss */
+
+.rule-area {
+  height: 330rpx;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.rule-title {
+  font-weight: bold;
+  font-size: 36rpx;
+  width: 100%;
+  text-align: center;
+  line-height: 112rpx;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 0;
+}
+
+.rule-title-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250rpx;
+  height: 112rpx;
+}
+
+.rule-title-view-text{
+    width: 250rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+}
+
+.rule-area-content {
+  display: flex;
+  padding-bottom: 53rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  height: 100%;
+  font-size: 32rpx;
+  box-sizing: border-box;
+  padding-top: 56rpx;
+}
+
+.rule-area-center {
+  display: flex;
+  flex-grow: 3;
+  flex-direction: column;
+  justify-content: center;
+  border: solid #e5e5e5 1rpx;
+  align-items: center;
+}
+
+.develop-tab {
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.develop-list {
+}
+
+.develop-item {
+  padding: 0 30rpx;
+  margin-bottom: 14rpx;
+}
+
+.develop-item-top {
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.develop-item-top-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.develop-item-top-left image {
+  height: 80rpx;
+  width: 80rpx;
+  margin-right: 20rpx;
+}
+
+/* .develop-item-top-left view {
+  display: flex;
+  flex-direction: column;
+} */
+
+.develop-item-top-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.develop-item-bottom {
+  height: 86rpx;
+  margin-left: 100rpx;
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  font-size: 26rpx;
+  color: #353535;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.develop-item-bottom view{
+   display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 2;
+}
+
+.phone-area{
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+
+.phone-area-btn{
+  width: 120rpx;
+  height: 36rpx;
+  line-height: 36rpx;
+  text-align: center;
+  border: solid #2a7ae8 1rpx;
+  font-size: 26rpx;
+  color: #2a7ae8;
+  margin-left: 20rpx;
+}

@@ -1,0 +1,27 @@
+<view class="base-area">
+
+  <image src="{{info.bankLogo}}"></image>
+  <text style="margin-top:28rpx;" class="f28">{{info.title}}</text>
+  <text style="margin-top:86rpx;font-size=40rpx;text-align: center;" class="b">{{info.amount}}元</text>
+
+</view>
+
+<view class="btn-area bg0 bb1 bt1 f32">
+
+  <view class="tab-log">
+
+    <text>手续费</text>
+    <text>{{info.serviceCharge}}元</text>
+  </view>
+  <view class="tab-log bb1 bt1">
+
+    <text>到账金额</text>
+    <text>{{info.arrivalAmount}}元</text>
+  </view>
+  <view class="tab-log">
+
+    <text>交易时间</text>
+    <text>{{info.date}}</text>
+  </view>
+
+</view>

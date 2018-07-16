@@ -1,0 +1,30 @@
+/* login.wxss */
+
+.extra-btn-area{
+  display: flex;
+  margin-top: 30rpx;
+  justify-content: space-between;
+}
+
+.extra-btn-area view{
+  color: #2a7ae8;
+  padding: 20rpx 0;
+}
+
+
+.icon-bottom-area {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  display: flex;
+  padding-bottom: 140rpx;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.icon-bottom-area image{
+  width: 236rpx;
+  height: 180rpx;
+}

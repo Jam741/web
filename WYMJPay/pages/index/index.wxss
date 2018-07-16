@@ -1,0 +1,85 @@
+/**index.wxss**/
+
+.section {
+  margin-left: 80rpx;
+  margin-right: 80rpx;
+  height: 180rpx;
+  background: white;
+}
+
+.section input {
+  width: 100%;
+}
+
+.top-layout {
+  height: 330rpx;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 14rpx;
+  border-bottom: #e5e5e5 solid 1rpx;
+}
+
+
+/*用户信息区域  */
+.userinfo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    /* background-image: '../../images/user_bj.png'; */
+
+}
+
+.user-login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 82rpx;
+  box-sizing: border-box;
+  align-items: center;
+    /* background-image: '../../images/user_bj.png'; */
+
+}
+
+.userinfo-avatar {
+  width: 120rpx;
+  height: 120rpx;
+  background: #fff;
+  margin-top: 50rpx;
+  border: solid #e5e5e5 1rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  margin-top: 48rpx;
+}
+
+.bank-area{
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: #e5e5e5 solid 1rpx;
+  margin-bottom: 14rpx;
+}
+
+/*银行信息  */
+.bank-info{
+  display: flex;
+  flex-direction: column;
+  padding:36rpx 0;
+  box-sizing: border-box;
+  margin-left: 30rpx;
+} 
+
+.bank-info-title{
+  color: #353535;
+  font-size: 10pt;
+  margin-bottom: 20rpx;
+}
+
+
+.bank-info-content{
+  font-weight: bold;
+  font-size: 12pt;
+}

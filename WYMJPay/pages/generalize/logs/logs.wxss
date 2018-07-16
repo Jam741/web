@@ -1,0 +1,45 @@
+/* logs.wxss */
+
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+
+.list-view {
+  padding-left: 30rpx;
+  margin-top: 10rpx;
+}
+
+.list-item {
+  display: flex;
+  height: 150rpx;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.item-content-right {
+  margin-top: 50rpx;
+  margin-left: 52rpx;
+  display: flex;
+  flex-grow: 2;
+  flex-direction: column;
+}
+
+.item-content-top {
+}
+
+.item-content-center {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 2;
+  margin-left: 50rpx;
+  justify-content: space-between;
+}
+
+.item-center {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}

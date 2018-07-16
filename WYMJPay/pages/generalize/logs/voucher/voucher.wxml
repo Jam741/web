@@ -1,0 +1,2 @@
+<!--voucher.wxml-->
+<image style="width:100%" src="{{imageUrl}}" mode="widthFix"></image>

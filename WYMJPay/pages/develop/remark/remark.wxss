@@ -1,0 +1,8 @@
+/* remark.wxss */
+
+.remark-input{
+  padding: 30rpx;
+  height: 150rpx;
+  text-align: start;
+  font-size: 32rpx;
+}

@@ -1,0 +1,24 @@
+<!--login.wxml-->
+
+<view class="bg0 bb1 bt1 f32" style="margin-top:30rpx;padding-left:30rpx;">
+  <view class="input-area bb1">
+    <text>手机号</text>
+    <input type="number" placeholder="请输入手机号码" bindinput="bindUsernameInput" maxlength="11" />
+  </view>
+  <view class="input-area">
+    <text>密码</text>
+    <input type="text" placeholder="请输入密码" bindinput="bindPwasswordInput" password="true" maxlength="20" />
+  </view>
+</view>
+<view class="btn-area">
+  <button style="margin-top:60rpx;" bindtap="listenerLoginClick">登录</button>
+
+  <view class="extra-btn-area f32">
+    <view bindtap="listenerFindClick">忘记密码</view>
+    <view bindtap="listenerRegisterClick">注册账号</view>
+  </view>
+</view>
+
+<view class="icon-bottom-area">
+  <image src="../../../images/ywmj_logo.png"></image>  
+</view>

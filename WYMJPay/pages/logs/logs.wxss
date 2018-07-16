@@ -1,0 +1,56 @@
+page {
+  /* background: #fff; */
+}
+
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+
+.list-view {
+  padding-left: 30rpx;
+  margin-top: 10rpx;
+}
+
+.list-item {
+  display: flex;
+  height: 150rpx;
+  flex-direction: row;
+  padding: 0 30rpx;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-left {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.item-left image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 50rpx;
+}
+
+.item-left-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-right {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.item-right-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* .list-item-left{
+  margin-right: 52rpx;
+} */

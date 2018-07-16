@@ -1,0 +1,68 @@
+<!--develop.wxml-->
+<view style="position:relative">
+
+  <view class="rule-area bg0 bb1">
+    <view class="rule-area-content">
+      <view class="rule-area-center f32 " style="padding:0 30rpx;">
+        <view style="margin-top:20rpx;">1、其他用户通过您转发的页面注册后立即获得渠道商身份。</view>
+        <view class="mt14">2、拥有渠道商身份的人可以通过快捷收款工具赚取奖金</view>
+      </view>
+    </view>
+
+
+  </view>
+
+  <view class="rule-title">
+    <view class="rule-title-view">
+      <text class="bg0 rule-title-view-text">规则说明</text>
+    </view>
+  </view>
+</view>
+
+
+<view class="develop-tab bg0 bb1 bt1 mt14" style="padding:0 30rpx;">
+  <text>累计发展</text>
+  <text>{{developInfo.developCount}}人</text>
+</view>
+
+<view style="height:56rpx;padding-top:36rpx;padding-left:30rpx;color:#888888" class="f32" wx:if="{{develops}}">
+  <text>推广列表</text>
+</view>
+
+<view class="develop-list" style="padding-bottom:150rpx;">
+  <view class="develop-item bg0 bb1 bt1" wx:for="{{develops}}" wx:key="*this">
+    <view class="develop-item-top bb1">
+      <view class="develop-item-top-left" bindtap="listenerCallClick" data-phone="{{item.channelPhone}}">
+        <!-- <image bindtap="listenerCallClick" data-phone="{{item.channelPhone}}" src="../../images/iphone_icon.png"></image> -->
+        <view class="phone-area">
+          <text class="f32" style="color:#2a7ae8">{{item.channelPhone}}</text>
+          <view class="phone-area-btn">点击拨号</view>
+        </view>
+        <text class="f32" style="color:#000000;margin-top:18rpx;">{{item.date}}</text>
+
+      </view>
+      <view class="develop-item-top-right">
+        <text class="f32">累计奖金</text>
+        <text class="f32" style="margin-top:18rpx;font-weight: bold;">{{item.totalWithdrawDeposit}}</text>
+      </view>
+    </view>
+    <view class="develop-item-bottom" bindtap="listenerRmarkClick" data-index="{{index}}">
+      <view>
+        <text>备注：</text>
+        <text style="width:430rpx" class="text-cut" wx:if="{{item.channelRemark}}">{{item.channelRemark}}</text>
+        <text wx:if="{{!item.channelRemark}}" style="color:#888888;padding:15rpx;" >点击填写备注</text>
+      </view>
+      <image class="arrow" src="../../images/black_more_bt.png"></image>
+    </view>
+  </view>
+
+  <view class="weui-loadmore" hidden="{{isHideLoadMore}}">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore-tips">正在加载</view>
+  </view>
+</view>
+
+
+<view class="bottom-area-b">
+  <button open-type="share" class="btn-bottom-b">立即发展渠道商</button>
+</view>

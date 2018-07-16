@@ -1,0 +1,309 @@
+/**app.wxss**/
+
+/**
+* colorPrimary      #3f87ea 
+* colorPrimaryDark  #2a7ae8
+* colorDivider      #e5e5e5
+**/
+
+page {
+  background-color: #f4f4f4;
+}
+
+input{
+  placeholder-style:"color:#c7c7c7";
+}
+
+button {
+  background: #2a7ae8;
+  color: #fff;
+}
+
+.bg0 {
+  background: #fff;
+}
+
+.container-center {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+.container-vertical {
+  height: 100%;
+  display: flex;
+  background: #f4f4f4;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.container-horizontal {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.button-default {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 40rpx;
+  text-align: left;
+  height: 90rpx;
+}
+
+/*widget*/
+
+.btn-area {
+  margin-top: 60rpx;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 30rpx;
+}
+
+.btn-tab {
+  height: 150rpx;
+  background: #fff;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+}
+
+.btn-tab view {
+  flex-grow: 2;
+  box-sizing: border-box;
+}
+
+.btn-tab image {
+  width: 56rpx;
+  box-sizing: border-box;
+  margin: 0 30rpx;
+  height: 56rpx;
+}
+
+.btn-tab .arrow {
+  width: 16rpx;
+  height: 26rpx;
+}
+
+.arrow {
+  width: 16rpx;
+  height: 26rpx;
+}
+
+.divider {
+  background: #e5e5e5;
+  height: 1rpx;
+}
+
+.divider-padding-left {
+  margin-left: 30rpx;
+  background: #e5e5e5;
+  height: 1rpx;
+}
+
+.divider-padding {
+  margin: 0 30rpx;
+  background: #e5e5e5;
+  height: 1rpx;
+}
+
+.text-cut {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.bb1 {
+  border-bottom: #e5e5e5 solid 1rpx;
+}
+
+.bt1 {
+  border-top: #e5e5e5 solid 1rpx;
+}
+
+.b {
+  font-weight: bold;
+}
+
+
+.f26{
+  font-size: 25rpx;
+}
+
+.f28 {
+  font-size: 28rpx;
+}
+
+.f32 {
+  font-size: 32rpx;
+}
+
+.f36 {
+  font-size: 36rpx;
+}
+
+.mt14 {
+  margin-top: 14rpx;
+}
+
+.mb14 {
+  margin-bottom: 14rpx;
+}
+
+.bottom-area {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+}
+
+.btn-bottom {
+  background: #3f87ea;
+  color: #fff;
+  font-size: 14pt;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.bottom-area-b {
+  width: 100%;
+  position: fixed;
+  padding: 0 30rpx;
+  padding-bottom: 39rpx;
+  bottom: 0;
+  box-sizing: border-box;
+  z-index: 999;
+}
+.btn-bottom-b {
+  background: #3f87ea;
+  color: #fff;
+  font-size: 14pt;
+}
+
+
+.info-input {
+  height: 86rpx;
+  background: #fff;
+  font-size: 12pt;
+  padding: 0 30rpx;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.info-input text {
+  width: 216rpx;
+  box-sizing: border-box;
+}
+
+.info-input input {
+  flex-grow: 2;
+}
+
+.send-sms-btn {
+  height: 70rpx;
+  width: 240rpx;
+  text-align: center;
+  line-height: 70rpx;
+  font-size: 12pt;
+  color: #2a7ae8;
+  background: #fff;
+  border-radius: 6rpx;
+  border: solid #2a7ae8 2rpx;
+}
+
+.hover-class {
+  background: #e5e5e5;
+}
+
+.input-area {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 150rpx;
+  align-items: center;
+  font-size: 12pt;
+}
+
+.input-area text {
+  width: 186rpx;
+}
+
+.input-area input {
+  flex-grow: 2;
+}
+
+.empty-view {
+  display: flex;
+  flex-direction: column;
+  color: #353535;
+  padding-top: 200rpx;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-view image {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.empty-view text {
+  margin-top: 60rpx;
+}
+
+
+/*  加载更多   */
+.weui-loading {
+  margin: 0 5px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-animation: weuiLoading 1s steps(12, end) infinite;
+  animation: weuiLoading 1s steps(12, end) infinite;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgxMDB2MTAwSDB6Ii8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTlFOUU5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTMwKSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iIzk4OTY5NyIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgzMCAxMDUuOTggNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjOUI5OTlBIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDYwIDc1Ljk4IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0EzQTFBMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSg5MCA2NSA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNBQkE5QUEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoMTIwIDU4LjY2IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0IyQjJCMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgxNTAgNTQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjQkFCOEI5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDE4MCA1MCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDMkMwQzEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTE1MCA0NS45OCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDQkNCQ0IiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTEyMCA0MS4zNCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNEMkQyRDIiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDM1IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0RBREFEQSIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgtNjAgMjQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTJFMkUyIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKC0zMCAtNS45OCA2NSkiLz48L3N2Zz4=) no-repeat;
+  background-size: 100%;
+}
+.weui-loadmore {
+  width: 65%;
+  margin: 1.5em auto;
+  line-height: 1.6em;
+  font-size: 14px;
+  text-align: center;
+}
+.weui-loadmore__tips {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.c7{
+
+}
+
+
+.icon-bottom-area {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  display: flex;
+  padding-bottom: 140rpx;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.icon-bottom-area image{
+  width: 236rpx;
+  height: 180rpx;
+}

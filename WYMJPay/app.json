@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/collection/bindBank/bindBank",
+    "pages/collection/collectionFirst/collectFirst",
+    "pages/collection/collectionSecond/collectionSecond",
+    "pages/collection/inputBankInfo/inputBankInfo",
+    "pages/illustrate/functionIllustrate",
+    "pages/user/login/login",
+    "pages/user/find/findPwd",
+    "pages/user/register/register",
+    "pages/supportBank/supportBank",
+    "pages/generalize/generalize",
+    "pages/develop/develop",
+    "pages/generalize/logs/logs",
+    "pages/logs/logsDetail/logsDetail",
+    "pages/develop/remark/remark",
+    "pages/generalize/logs/voucher/voucher"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3f87ea",
+    "navigationBarTitleText": "鹦鹉收款",
+    "navigationBarTextStyle": "#fff",
+    "backgroundColor": "#F4F4F4"
+  }
+}

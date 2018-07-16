@@ -1,0 +1,36 @@
+<!--bindBank.wxml-->
+<view class="bindBank">
+
+  <view class="input-bank-layout">
+    <text class="input-bank-title">请输入持卡人本人的银行卡号</text>
+    <view class="info-input bb1 bt1">
+      <text>银行卡号</text>
+      <input type="number" focus="true" maxlength="21" placeholder="请输入银行储蓄卡号" bindinput="bindBankNumInput"/>
+    </view>
+  </view>
+
+  <view class="input-user-layout bb1 bt1 bg0">
+    <view class="info-input">
+      <text>姓名</text>
+      <input type="text" maxlength="10" placeholder="请输入持卡人姓名" bindinput="bindUserNameInput" />
+    </view>
+
+    <view class="divider-padding-left"></view>
+    <view class="info-input">
+      <text>身份证号</text>
+      <input type="idcard" maxlength="18" placeholder="请输入持卡人身份证号" bindinput="bindIdcardInput" />
+    </view>
+    <view class="divider-padding-left"></view>
+    <view class="info-input">
+      <text>预留手机号</text>
+      <input type="number" confirm-type="done" maxlength="11" placeholder="请输入开户行预留手机号码" bindinput="bindPhoneInput" bindconfirm="listenerInputConfirm" />
+    </view>
+  </view>
+
+  <view class="btn-support-bank">
+    <text bindtap="listenerViewSupportBank">支持的银行卡列表</text>
+  </view>
+  <view class="btn-area">
+    <button bindtap="listenerConfirm">确认</button>
+  </view>
+</view>

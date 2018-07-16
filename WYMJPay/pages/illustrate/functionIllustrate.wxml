@@ -1,0 +1,64 @@
+<!--functionIllustrate.wxml-->
+<view style="padding-left:30rpx;padding-right:30rpx;padding-top:50rpx;padding-bottom:50rpx;">
+
+
+  <text class="f36 b">我们的优势？</text>
+
+  <view class="line-tab f28" style="margin-top:50rpx;">
+    <text class="b no-cut-txt">方便 —— </text>
+    <text> 无需额外购买硬件刷卡设备，直接在线收款。</text>
+  </view>
+
+
+  <view class="line-tab f28 mt14">
+    <text class="b no-cut-txt">安全 —— </text>
+    <text> 不使用刷卡机，彻底规避银行卡被复制的风险。</text>
+  </view>
+
+  <view class="line-tab f28 mt14">
+    <text class="b no-cut-txt">快捷 —— </text>
+    <text> 快速收款，实时到账。</text>
+  </view>
+
+
+  <view class="f36 b" style="margin-top:100rpx;">如何完成收款</view>
+
+
+  <view class="line-tab f28" style="margin-top:50rpx;">
+    <text class="b no-cut-txt">1. </text>
+    <text>注册并登录。</text>
+  </view>
+
+  <view class="line-tab f28 mt14">
+    <text class="b no-cut-txt">2. </text>
+    <text>进入“快捷收款”，录入金额和付款银行卡信息。</text>
+  </view>
+  <view class="line-tab f28 mt14">
+    <text class="b no-cut-txt">3. </text>
+    <text>获取手机短信验证码，验证通过即可完成收款。</text>
+  </view>
+
+  <view class="f28 mt14 b">
+    注意：第一次收款需要先绑定收款银行卡（储蓄卡）。收款银行卡一旦绑定成功后，不可更换。建议选择常用的银行卡收款。
+  </view>
+
+
+  <view class="f36 b" style="margin-top:100rpx;">如何方便的打开“鹦鹉收款”？</view>
+
+
+  <view class="line-tab f28" style="margin-top:50rpx;">
+    <text class="b no-cut-txt">方法一： </text>
+    <text>打开“发现”中的“小程序”，搜索“鹦鹉收款”。</text>
+  </view>
+
+  <view class="line-tab f28 mt14">
+    <text class="b no-cut-txt">方法二： </text>
+    <text>打开“发现”中的“小程序”，在小程序列表中选择“鹦鹉收款”。</text>
+  </view>
+  
+  <view class="line-tab f28 mt14">
+    <text class="b no-cut-txt">方法三： </text>
+    <text>在小程序中点右上角按钮，选中“显示在聊天顶部”，以后在聊天列表顶部可直接进入“鹦鹉收款”。</text>
+  </view>
+
+</view>

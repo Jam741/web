@@ -1,0 +1,18 @@
+/* inputBankInfo.wxss */
+
+
+.bank-support-area{
+    display: flex;
+    height: 110rpx;
+    justify-content: center;
+    align-items: center;
+    color: #3f87ea;
+    font-size: 11pt;
+}
+
+
+.desc-area{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}

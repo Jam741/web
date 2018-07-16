@@ -1,0 +1,103 @@
+/* collectFirst.wxss */
+
+.amount-area {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 150rpx;
+  align-items: center;
+  padding: 0 30rpx;
+  margin-top: 30rpx;
+  font-size: 12pt;
+}
+
+.amount-area text {
+  width: 216rpx;
+}
+
+.amount-area input {
+  flex-grow: 2;
+}
+
+.fee-area {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 14rpx;
+}
+
+.fee-view {
+  width: 80%;
+  height: 300rpx;
+  font-size: 10pt;
+  border: solid #e5e5e5 1rpx;
+  border-radius: 6rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fee-view-tab {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 82rpx;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 16rpx;
+}
+
+.fee-view-tab .text-l {
+  color: #888;
+}
+
+.fee-view-tab .text-r {
+  color: #000;
+}
+
+.fee-area-desc {
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bank-info-area{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: 999;
+}
+
+
+.bank-info-tab {
+  height: 150rpx;
+  background: #fff;
+  box-sizing: border-box;
+  margin-left: 30rpx;
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+}
+
+.bank-info-tab view{
+  display: flex;
+  flex-grow: 2;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.bank-info-tab radio{
+  margin-right: 30rpx;
+}
+
+
+.bankcards-area{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}

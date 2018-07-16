@@ -1,0 +1,19 @@
+<!--collectionSecond.wxml 快捷收款第二步 确认账单信息-->
+<view class="bg0 bb1 bt1 f32" style="margin-top:30rpx; padding:0 30rpx;">
+  <view class="btn-tab">
+    <text style="flex-grow: 2;">金额</text>
+    <text>{{info.amount}}</text>
+  </view>
+  <view class="btn-tab bb1 bt1">
+    <text style="flex-grow: 2;">银行卡号</text>
+    <text>{{info.cardNO}}</text>
+  </view>
+
+  <view class="btn-tab">
+    <text style="width:186rpx;">验证码</text>
+    <input type="number" maxlength="6" focus="true" placeholder="请输入验证码" bindinput="listenerSmsCodeInput" />
+    <view hover-class="hover-class" hover-stay-time="100" class="send-sms-btn" bindtap="listenerSendSmsCodeClick">{{sendBtnText}}</view>
+  </view>
+</view>
+
+<view hover-class="hover-class" hover-stay-time="100" class="bottom-area btn-bottom" bindtap="listenerConfirmClick">确认</view>

@@ -1,0 +1,67 @@
+<!--collectFirst.wxml -->
+
+
+
+<view class="amount-area bt1 bb1 bg0">
+  <text>金额</text>
+  <input type="digit" placeholder="每笔限额10-50000元" bindinput="listenerAmountInput" focus="true" />
+</view>
+
+
+<view class="fee-area">
+  <view class="fee-view bg0">
+
+    <view class="fee-area-desc bb1">
+      <text style="font-size:9pt;">手续费:{{bankBaseInfo.poundageRate}}%+{{bankBaseInfo.poundage}}元 到账时间:{{bankBaseInfo.arrival}}</text>
+    </view>
+    <view class="fee-view-tab">
+      <text class="text-l">付款手续费</text>
+      <text class="text-r">{{payFee}}</text>
+    </view>
+    <view class="fee-view-tab bb1 bt1">
+      <text class="text-l">结算手续费</text>
+      <text class="text-r">{{staticFeeAmount}}</text>
+    </view>
+    <view class="fee-view-tab ">
+      <text class="text-l">应到账金额</text>
+      <text class="text-r">{{finalAmount}}</text>
+    </view>
+
+  </view>
+  <view class="fee-area-desc" style="margin-top:14rpx;">
+    <icon style="margin-right:20rpx;" type="info" color="#828282" size="14" /> <text style="font-size:9pt;color:#828282">以上数据仅供参考,以实际到账金额为准</text>
+  </view>
+</view>
+
+
+
+<view class="bank-info-area">
+
+  <view wx:if="{{bankBaseInfo.cardBaseInfos}}">
+    <view>
+      <text style="height:80rpx;line-height:80rpx;font-size:12pt;margin-left:30rpx;color:#888888;box-sizing: border-box;">选择付款银行卡</text>
+    </view>
+    <scroll-view scroll-y="true" style="height:400rpx">
+
+      <radio-group class="bb1 bt1 bg0" bindchange="listenerRadioChange">
+
+        <label class="bank-info-tab">
+      <view>
+      <text class="b f32">使用新银行卡</text>
+      </view>
+      <radio value="{{-1}}" checked="true" />
+    </label>
+
+        <label class="bank-info-tab bt1" wx:for="{{bankBaseInfo.cardBaseInfos}}" wx:key="item.cardNO">
+      <view>
+      <text class="f28">{{item.bankName}} {{item.cardTypeDesc}}</text>
+      <text class="b f36" style="margin-top:14rpx;">{{item.tr_cardNO}}</text>
+      </view>
+      <radio value="{{item.id}}" checked="{{false}}" />
+    </label>
+      </radio-group>
+    </scroll-view>
+  </view>
+  <view hover-class="hover-class" hover-stay-time="100" class="btn-bottom" bindtap="listenerNextClick">下一步</view>
+
+</view>

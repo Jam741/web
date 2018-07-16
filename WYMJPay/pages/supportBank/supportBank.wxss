@@ -1,0 +1,49 @@
+/* supportBank.wxss */
+page {
+  background-color: #fff;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 50rpx 0;
+}
+
+.bank-area {
+  padding: 0 30rpx;
+}
+
+.bank-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.desc-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  width: 14rpx;
+  height: 14rpx;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 210rpx;
+  height: 30rpx;
+  margin-bottom: 14rpx;
+}
+
+.item-icon-area {
+  width: 14rpx;
+  height: 14rpx;
+  line-height: 14rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

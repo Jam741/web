@@ -1,0 +1,30 @@
+<!--supportBank.wxml-->
+<view class="title">
+  <text class="f36 b">支持的银行卡列表</text>
+</view>
+
+
+<view class="bank-area">
+
+
+  <view class="desc-area f28">
+    <text>贷记卡（信用卡 </text>
+    <image style="margin: 0 5rpx;" class="logo" src="../../images/yuan_more_bt.png"></image>
+    <text> ）</text>
+    <text style="margin-left:46rpx;">借记卡（储蓄卡</text>
+    <image style="margin: 0 5rpx;" class="logo" src="../../images/sanjiao_more_bt.png"></image>
+    <text> ）</text>
+  </view>
+
+  <view class="bank-list" style="margin-top:50rpx;">
+    <view class="item f28" wx:for="{{banks}}" wx:key="*this">
+      <text>{{item.bank_name}}</text>
+      <view class="item-icon-area" style="margin-left:20rpx;">
+        <image wx:if="{{item.xyk}}" class="logo" src="../../images/yuan_more_bt.png"></image>
+      </view>
+      <view class="item-icon-area" style="margin-left:10rpx;">
+        <image wx:if="{{item.cxk}}" class="logo" src="../../images/sanjiao_more_bt.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

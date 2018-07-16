@@ -1,0 +1,13 @@
+/* functionIllustrate.wxss */
+
+page {
+  background-color: #fff;
+}
+
+
+.line-tab{
+  display: flex;
+  flex-direction: row;
+}
+
+.no-cut-txt{white-space:nowrap;}/*强制不换行*/

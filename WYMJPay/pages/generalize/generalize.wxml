@@ -1,0 +1,77 @@
+<!--generalize.wxml-->
+<view style="position:relative">
+
+  <view class="rule-area bg0 bb1">
+    <view class="rule-area-content">
+      <view class="rule-area-center f32 ">
+        <view class="mt14">其他用户通过您转发的页面注册</view>
+        <view class="mt14">以后每完成一笔收款您都将获得奖金</view>
+        <view class="b mt14">每笔收款的奖金金额为收款的{{generalizeInfo.rate}}%</view>
+      </view>
+    </view>
+
+
+  </view>
+
+  <view class="rule-title">
+    <view class="rule-title-view">
+      <text class="bg0 rule-title-view-text">规则说明</text>
+    </view>
+  </view>
+</view>
+
+<view class="pos-aera">
+  <view class="amount-area">
+    <text class="f28">可提现余额</text>
+    <text class="amount-text" style="margin-top:20rpx;">{{generalizeInfo.canApplyMoney}}元</text>
+  </view>
+  <view>
+    <view wx:if="{{generalizeInfo.currentApplyMoney==0}}" class="btn-pos" hover-class="hover-class" hover-stay-time="100" bindtap="listenerGetMoneyClick">提现</view>
+    <view wx:if="{{generalizeInfo.currentApplyMoney!=0}}" class="amount-area-pos">
+      <text class="f28">待处理提现申请</text>
+    <text class="amount-text" style="margin-top:20rpx;">{{generalizeInfo.currentApplyMoney}}元</text>
+    </view>
+  </view>
+</view>
+
+<view class="pos-tab-area bg0 bb1">
+  <view class="pos-tab">
+    <view class="pos-tab-left">
+      <text class="pos-tab-title">累计提现</text>
+      <text style="">{{generalizeInfo.totalApplyMoney}}元</text>
+    </view>
+    <view class="pos-tab-btn" bindtap="listenerCheckLog">
+      <text style="margin-right:30rpx;">查看提现记录</text>
+      <image class="arrow" src="../../../images/black_more_bt.png"></image>
+    </view>
+  </view>
+  <view class="pos-tab bb1 bt1">
+    <text class="pos-tab-title">累计推广</text>
+    <text>{{generalizeInfo.spreadCount}}人</text>
+  </view>
+  <view class="pos-tab">
+    <text class="pos-tab-title">累计收款</text>
+    <text>{{generalizeInfo.spreadOrderCount}}单</text>
+  </view>
+</view>
+<view style="height:56rpx;padding-top:36rpx;padding-left:30rpx;color:#888888" wx:if="{{logs}}" class="f32">
+  <text>每日记录</text>
+</view>
+<view class="pos-tab-area bg0 bt1" wx:if="{{logs}}" style="padding-bottom:150rpx;">
+  <view class="pos-tab bb1" wx:for="{{logs}}" wx:key="*this">
+    <view class="pos-tab-left">
+      <text style="margin-right:30rpx;">{{item.date}}</text>
+      <text>收款：{{item.orderCount}}</text>
+    </view>
+    <text>奖金：{{item.brokerage}}</text>
+  </view>
+
+  <view class="weui-loadmore" hidden="{{isHideLoadMore}}">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore-tips">正在加载</view>
+  </view>
+</view>
+
+<view class="bottom-area-b">
+  <button open-type="share" class=" btn-bottom-b">立即推广快捷收款</button>
+</view>

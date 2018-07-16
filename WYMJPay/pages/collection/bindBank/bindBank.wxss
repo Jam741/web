@@ -1,0 +1,23 @@
+/* bindBank.wxss */
+
+.input-bank-layout{
+  margin-bottom: 60rpx;
+}
+
+.input-bank-title{
+  height: 84rpx;
+  font-size: 10pt;
+  color: #888888;
+  box-sizing: border-box;
+  padding-left: 30rpx;
+  line-height: 84rpx;
+}
+
+
+.btn-support-bank{
+  display: flex;
+  margin-top: 44rpx;
+  justify-content: center;
+  color: #3f87ea;
+  font-size: 10pt;
+}

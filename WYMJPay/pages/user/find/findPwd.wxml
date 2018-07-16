@@ -1,0 +1,26 @@
+<!--findPwd.wxml-->
+<view class="bg0 bb1 bt1 f32" style="margin-top:30rpx;padding-left:30rpx;">
+  <view class="input-area bb1">
+    <text>手机号</text>
+    <input type="number" placeholder="请输入手机号码" bindinput="bindUsernameInput" maxlength="11" focus="true" value="{{inputUserNameValue}}" cursor="{{inputUserNameValue.length}}"/>
+  </view>
+
+  <view class="btn-tab bb1">
+    <text style="width:216rpx">验证码</text>
+    <input style=" flex-grow: 1;" type="number" maxlength="6" placeholder="请输入验证码" bindinput="bindCodeInput" />
+    <view  style="margin-right:30rpx;" hover-class="hover-class" hover-stay-time="100" class="send-sms-btn" bindtap="listenerSendSmsCodeClick">{{sendBtnText}}</view>
+  </view>
+
+  <view class="input-area">
+    <text>新密码</text>
+    <input type="text" placeholder="请输入8-20位数字或字母密码" bindinput="bindPwasswordInput" maxlength="20" />
+  </view>
+</view>
+<view class="btn-area">
+  <button style="margin-top:60rpx;" bindtap="listenerConfirmClick">确认</button>
+</view>
+
+
+<view class="icon-bottom-area">
+  <image src="../../../images/ywmj_logo.png"></image>  
+</view>
